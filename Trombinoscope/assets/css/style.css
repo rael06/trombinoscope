@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:700%27%27');
+
+@keyframes elastic {
+	0%, 100% {
+		letter-spacing: -1.5rem;
+	}
+
+	50% {
+		letter-spacing: -0.5rem;
+	}
+
+}
+
+html, body {
+	margin: 0;
+	padding: 0;	
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Background */
+body {
+	background-size: contain; /* to extend background image to be entire for all the container size */
+	background-image: url("../photos/simplon2.jpg");
+	background-repeat: repeat; /* repeat background image as the window size */
+}
+
+/* !Background */
+
+/* Main Container */
+.main_container {
+}
+
+/* Header */
+.head_animation {
+	text-align: center;
+}
+
+
+.head_animation-items {
+	/* Text Animation Id */
+	font-size: 10vw;
+	animation: elastic 3s ease-in-out infinite;
+	cursor: default;
+}
+
+.head_animation .text-item {
+	font-family: 'Teko', sans-serif;
+	padding-right: 5px;
+	padding-left: 5px;
+	display: inline-flex;
+	mix-blend-mode: multiply;
+}
+
+.head_animation .text-item > div:hover {
+	transform: scale(2) !important;
+	transition: transform .2s ease-in-out;
+}
+
+.red {
+	color: #BD0419;
+}
+
+.yellow {
+	color: #D28910;
+}
+
+.green {
+	color: #018671;
+}
+
+.blue {
+	color: #0689BF;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+/* !Header */
+
+/* Slideshow Container */
+.slideshow-container {
+	max-width: 700px;
+	margin: auto;
+	position: relative;
+	/*
+	margin: auto;*/
+}
+
+.slideshow-items {
+	/* user-select */
+	-webkit-user-select: none; /* Safari */
+   	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+	/* !user-select */
+	padding-bottom: 67%;
+	height: 0;
+	overflow: hidden;
+}
+
+/* Pictures */
+.picture {
+	width: 100%;
+	border: 4px solid rgba(100, 0, 0, 0.7);
+	border-radius: 10px;
+}
+
+/* !Pictures */
+.mySlides {
+
+	/* Hide the images by default */
+
+	/* display: none; */
+	opacity: 0;
+	position: absolute;
+}
+
+/* Buttons Next, Prev, Play/Pause */
+.fas {
+
+	/* Play/Pause */
+	position: absolute;
+	color: #f2f2f2;
+	text-shadow: 3px 3px 2px #555;
+	font-size: 2rem;
+	top: 10px;
+	right: 15px;
+	cursor: pointer;
+}
+
+.prev, .next {
+	/* user-select */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+	/* !user-select */
+	cursor: pointer;
+	position: absolute;
+	top: 45%;
+	left: 4px;
+	padding: 16px;
+	color: #f2f2f2;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next {
+
+	/* Position the "next button" to the right */
+	left: unset;
+	right: 4px;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+
+	/* On hover, add a black background color with a little bit see-through */
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* !Buttons Next, Prev, Play, Pause */
+
+/* Caption Text */
+.text {
+	color: #f2f2f2;
+	font-size: 50px;
+	text-shadow: 3px 3px 4px black;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+
+	/* Number text (1/xx etc) */
+	color: #f2f2f2;
+	font-size: 16px;
+	text-shadow: 2px 2px 2px black;
+	position: absolute;
+	top: 3%;
+	left: 3%;
+}
+
+/* !Caption Text */
+
+/* Fading Animation */
+.mySlides.hide_slide_item {
+
+	/*display: none;*/
+	opacity: 0;
+	transition: opacity 1500ms;
+}
+
+.mySlides.display_slide_item {
+
+	/*display: block;*/
+	opacity: 1;
+	transition: opacity 1500ms;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+
+}
+
+/* !Fading Animation */
+
+/* !Slideshow Container */
+
+/* Footer */
+.footer_container {
+	/*position: absolute;*/
+	margin-top: 100px;
+	font-family: cursive;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.copyright {
+	margin: 0px;
+}
+
+.facebook_icon {
+	width: 60px;
+	height: 60px;
+}
+
+/* !Footer */

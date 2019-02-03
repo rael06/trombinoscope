@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trombinoscope Rael Aleksandra Anissa</title>
+		<meta charset="utf-8">
+
+<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<!-- !CSS -->
+	</head>
+
+	<body>
+
+<!-- Main Container -->
+		<div class="main_container">
+
+			<div class="head_animation">
+				<div class="head_animation-items"></div>
+			</div>
+
+<!-- Slideshow Container -->
+			<div class="slideshow-container">
+				<div class="slideshow-items"></div>
+				<!-- Buttons -->
+				<i class="fas fa-play" onclick="trombinoscop.automaticSlide()"></i>
+				<a class="prev" onclick="trombinoscop.plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="trombinoscop.plusSlides(1)">&#10095;</a>
+				<!-- !Buttons -->
+			</div>
+<!-- !Slideshow Container -->
+
+<!-- Footer -->
+			<footer>
+				<div class="footer_container">
+					<div class="logo">
+						<a href="https://www.facebook.com/simploncannesfrayere/" target="blank">
+							<img class="facebook_icon" src="./assets/icon/2000px-F_icon.svg.png">
+						</a>
+					</div>
+					<div>
+						<p class="copyright">&copy;2019 All Rights Reserved Rael Aleksandra Anissa :)</p>
+					</div>
+				</div>
+			</footer>
+<!-- !Footer -->
+		</div>
+<!-- !Main Container -->
+
+<!-- Javascript -->
+		<script src="./assets/js/trombinoscop_users.js"></script>
+		<script type="text/javascript" src="./assets/js/TextAnimated.js"></script>
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+		<script type="text/javascript">
+			trombinoscop.init(TROMBINOSCOP_USERS);
+		</script>
+<!-- !Javascript -->
+
+	</body>
+</html>
